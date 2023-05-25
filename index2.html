@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+    <header>
+        <title>MySite</title>
+        <link rel="stylesheet" href="CSS.css">
+        
+        <meta http-equiv="Content-type" content="text/html; charset=utf-8">
+        <meta name=" viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0, user-scalable=0" />
+    </header>
+    <body>
+        <h3>Як тебе звати?</h3>
+        <input class="input" type="text" name="">
+
+
+
+        <button class="button" onclick="openPopup()">Супер, тепер натисни на мене!</button>
+<div id="myPopup" class="popup">
+    <span class="popup-close" onclick="closePopup()">&times;</span>
+    <h2>Приемно познайомитися</h2>
+    <a href="index.html">RETURN TO THE PREVIOUS PAGE</a>
+</div>
+
+<script>
+    // Функція для відкриття вспливаючого вікна
+    function openPopup() {
+    document.getElementById("myPopup").style.display = "block";
+    }
+    
+    // Функція для закриття вспливаючого вікна
+    function closePopup() {
+    document.getElementById("myPopup").style.display = "none";
+    }
+</script>
